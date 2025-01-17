@@ -25,19 +25,19 @@ Installing required dependancies
 
 **Python Version Required: 3.10 or higher**  
 
->*pip install -r requirements.txt*
+`pip install -r requirements.txt`
 
 After installing required packages, both frontend and backend must be run concurrently on separate terminals.
 
 ### Running backend
->*cd backend*
+`cd backend`
 
->*python app.py*
+`python app.py`
 
 ### Running frontend
->*cd frontend*
+`cd frontend`
 
->*python -m https.server 8000*
+`python -m https.server 8000`
 
 ### Login page
 ![alt text](readme_src/login.png)
