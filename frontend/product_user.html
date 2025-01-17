@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page (User)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="product-user-header">
+        <h1>Available Products</h1>
+        <div class="header-buttons">
+            <button id="back-button" class="button">Back</button>
+            <button id="logout-button" class="logout-button">Logout</button>
+        </div>
+    </header>
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product Image</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody id="product-table-body">
+                <!-- Products will be dynamically populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="scripts/toasts.js"></script>
+    <script src="scripts/product_user.js"></script>
+</body>
+</html>

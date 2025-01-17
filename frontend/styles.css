@@ -1,0 +1,300 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 20px; /* Add padding around the entire body */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #bae7f3;
+    padding: 20px; /* Padding inside the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 20px; /* Add padding inside the header */
+    background-color: #1882c4;
+    color: white;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 28px;
+    color: rgb(12, 11, 11); /* Match the header background */
+}
+
+.logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 30px;
+    padding: 15px 20px; /* Add padding to sections */
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 22px;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px; /* Add padding to form area */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-input, .form-textarea, .form-select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+.form-textarea {
+    resize: none;
+}
+
+.form-button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #1c6ea4;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px; /* Add margin between sections */
+    padding: 15px; /* Add padding inside the table container */
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Increase padding for better spacing */
+    text-align: center;
+}
+
+.table th {
+    background-color: #2980b9;
+    color: white;
+    font-size: 16px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #219150;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+/* Modal Styles */
+.modal {
+    /* display: none;
+    position: fixed; */
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: #333;
+}
+
+.secondary-button {
+    background-color: #999; /* Grey */
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.mini-notice {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+    text-align: right;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.view-products-button {
+    background-color: #999;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.product-user-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 20px; /* Add padding inside the header */
+    background-color: #1882c4;
+    color: white;
+    border-radius: 8px;
+}
+
+.edit-product-button {
+    background-color: #1882c4;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* Ensures the image fits within the given dimensions */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    margin-right: 10px; /* Optional: Add some spacing */
+}
+
+.password-button {
+    background-color: #097da3;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}

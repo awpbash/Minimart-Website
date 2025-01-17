@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <!-- Logo -->
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Muhammadiyah Welfare Home Logo" class="logo">
+            </div>
+            <h1>Resident Dashboard</h1>
+            <div class="header-buttons">
+                <button id="product-button" class="button view-products-button">View All Products</button>
+                <button id="auction-button" class="button view-products-button">Auction</button>
+                <button id="logout-button" class="logout-button">Logout</button>
+            </div>
+        </header>
+
+        <section id="resident-actions">
+            <!-- Voucher Balance -->
+            <div class="voucher-balance">
+                <h2 id="voucher-balance" class="balance-text"></h2>
+            </div>
+            <!-- Voucher Table Section -->
+            <div class="section">
+                <h2 class="section-title">Your Vouchers</h2>
+                <div class="table-container">
+                    <table id="voucher-table" class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Product</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be dynamically added here -->
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+
+            
+            <!-- Transaction Section -->
+            <div class="section">
+                <h2 class="section-title">Your Transactions</h2>
+                <div class="table-container">
+                    <table id="transaction-table" class="table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>User</th>
+                                <th>Status</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Rows will be dynamically added here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+            <!-- Product Request Form -->
+            <div class="section">
+                <h2 class="section-title">Request Products</h2>
+                <form id="request-product-form" class="form">
+                    <label for="product-dropdown" class="form-label">Choose a Product:</label>
+                    <select id="product-dropdown" required class="form-select"></select>
+                    <button type="submit" class="form-button">Request Product</button>
+                </form>
+            </div>
+        </section>
+        <div id="update-info-modal" class="form">
+            <div class="form-content">
+                <h2>Update Your Info</h2>
+                <form id="update-info-form" class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter new email" required>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="Enter new phone number" required>
+
+                    <label for="current-password">Current Password:</label>
+                    <input type="password" id="current-password" placeholder="Enter current password" required>
+                    
+                    <label for="password">New Password:</label>
+                    <input type="password" id="password" placeholder="Enter new password">
+
+                    <button type="submit" class="button">Update</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="scripts/toasts.js"></script>
+    <script src="scripts/resident_dashboard.js"></script>
+</body>
+</html>

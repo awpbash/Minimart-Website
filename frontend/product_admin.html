@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management (Admin)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Product Management</h1>
+        <div class="header-buttons">
+            <button id="back-button" class="button">Back to Dashboard</button>
+        </div>
+    </header>
+
+    <div class="table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product Image</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="product-table-body">
+                <!-- Products will be dynamically populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="form-container">
+        <h2 class="form-title">Add or Update Product</h2>
+        <form id="add-product-form" class="form">
+            <label for="product-name" class="form-label">Product Name</label>
+            <input 
+                type="text" 
+                id="product-name" 
+                name="product-name" 
+                placeholder="Enter Product Name" 
+                required 
+                class="form-input"
+            >
+    
+            <label for="product-price" class="form-label">Price</label>
+            <input 
+                type="number" 
+                id="product-price" 
+                name="product-price" 
+                placeholder="Enter Price" 
+                step="0.01" 
+                required 
+                class="form-input"
+            >
+    
+            <label for="product-stock" class="form-label">Stock</label>
+            <input 
+                type="number" 
+                id="product-stock" 
+                name="product-stock" 
+                placeholder="Enter Stock Quantity" 
+                required 
+                class="form-input"
+            >
+            <label for="product-image" class="form-label">Product image</label>
+            <input 
+                type="string" 
+                id="product-image" 
+                name="product-image" 
+                placeholder="Attach product image" 
+                step="0.01" 
+                required 
+                class="form-input"
+            >
+    
+            <button type="submit" class="form-button">Add Product</button>
+        </form>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="scripts/toasts.js"></script>
+    <script src="scripts/product_admin.js"></script>
+</body>
+</html>

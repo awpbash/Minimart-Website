@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Auction Page</h1>
+        <div class="header-buttons">
+            <button id="back-dashboard-button" class="button">Back to Dashboard</button>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="resident-section">
+            <h2>Available Auctions</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Starting Bid</th>
+                        <th>Highest Bid</th>
+                        <th>Highest Bidder</th>
+                        <th>End Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="auction-table-body">
+                    <!-- Products dynamically populated here -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="admin-section" class="hidden">
+            <h2>Manage Auctions</h2>
+            <div class="form-container">
+                <h3>Add/Edit Auction</h3>
+                <form id="auction-form">
+                    <input type="text" id="product-name" placeholder="Product Name" required>
+                    <input type="number" id="starting-price" placeholder="Starting Price" required>
+                    <input type="number" id="bidding-increment" placeholder="Bidding Increment" required>
+                    <input type = "datetime-local" id="end-time" placeholder="End Time" required>
+                    <input type = "datetime-local" id="start-time" placeholder="Start Time" required>
+                    <button type="submit" class="form-button">Save Auction</button>
+                </form>
+            </div>
+            <h3>Current Auctions</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Starting Bid</th>
+                        <th>Highest Bid</th>
+                        <th>Highest Bidder</th>
+                        <th>End Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-auction-table-body">
+                    <!-- Auctions dynamically populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <script src="scripts/auction.js"></script>
+</body>
+</html>
